@@ -1,0 +1,35 @@
+#!/sbin/runscript
+# Copyright 1999-2016 Gentoo Foundation
+# Distributed under the terms of the GNU General Public License v2
+# $Id$
+
+extra_commands="info"
+
+NEO4J="/opt/bin/neo4j"
+
+depend() {
+	need net
+	provide neo4j
+}
+
+start() {
+	ebegin "Starting neo4j"
+	start-stop-daemon --start --exec ${NEO4J} start
+	eend $?
+}
+
+stop() {
+	ebegin "Stopping neo4j"
+	${NEO4J} stop 
+	eend $?
+}
+
+restart() {
+	ebegin "Restarting neo4j"
+	${NEO4J} restart 
+	eend $?
+}
+
+info() {
+	${NEO4J} info	
+}

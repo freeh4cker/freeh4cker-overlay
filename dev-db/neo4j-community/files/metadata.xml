@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+	<maintainer>
+		<email>freeh4cker@gmail.com</email>
+		<name>Bertrand Néron</name>
+	</maintainer>
+	<longdescription lang="en">
+     Neo4j is a graph database management system developed by Neo Technology, Inc. Described by its developers as an ACID-compliant transactional database with native graph storage and processing,[3] Neo4j is the most popular graph database according to db-engines.com.
+
+Neo4j is implemented in Java and accessible from software written in other languages using the Cypher Query Language through a transactional HTTP endpoint.
+	</longdescription>
+</pkgmetadata>

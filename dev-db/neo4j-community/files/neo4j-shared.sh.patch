@@ -1,0 +1,13 @@
+--- /opt/neo4j/bin/neo4j-shared.sh	2016-06-10 05:01:59.000000000 +0200
++++ /home/bneron/neo4j-shared.sh	2016-07-15 16:35:17.217693685 +0200
+@@ -161,8 +161,8 @@
+ _setup_configurable_paths() {
+   NEO4J_DATA=$(resolve_path "${dbms_directories_data:-data}")
+   NEO4J_LIB=$(resolve_path "${dbms_directories_lib:-lib}")
+-  NEO4J_LOGS=$(resolve_path "${dbms_directories_logs:-logs}")
++  NEO4J_LOGS=/var/log/neo4j/
+   NEO4J_PLUGINS=$(resolve_path "${dbms_directories_plugins:-plugins}")
+-  NEO4J_RUN=$(resolve_path "${dbms_directories_run:-run}")
++  NEO4J_RUN=/var/run/
+   readonly NEO4J_DATA NEO4J_LIB NEO4J_LOGS NEO4J_PLUGINS NEO4J_RUN
+ }
