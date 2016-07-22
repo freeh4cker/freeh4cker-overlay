@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+  <herd>sci-biology</herd>
+  <maintainer>
+    <email>freeh4cker@gmail.com</email>
+    <name>Bertrand Néron</name>
+  </maintainer>
+  <longdescription>
+Golden is a small databanks entries retriever. It searches and displays
+entries on indexed databanks 'flat' files.
+
+This package currently provide the following programs 
+	golden ... Entries retriever.
+	goldin ... Indexes generator
+
+Queries/Indexes can be made using entry name, primary accession numbers
+or even both (by default)
+
+Currently supported formats: Genbank, Embl, Pir codata.
+  </longdescription>
+  <upstream>
+    <maintainer status="active">
+	     <email>vlegrand@pasteur.fr</email>	
+		   <name>Véronique Legrand</name>
+		</maintainer>
+		<bugs-to>velegrand@pasteur.fr</bugs-to>
+  </upstream>
+</pkgmetadata>
