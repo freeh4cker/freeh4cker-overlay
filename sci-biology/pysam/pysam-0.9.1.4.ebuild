@@ -22,9 +22,6 @@ DEPEND="${RDEPEND}
 	dev-python/cython[${PYTHON_USEDEP}]
 	dev-python/setuptools[${PYTHON_USEDEP}]"
 
-#PATCHES=(
-#	"${FILESDIR}/${P}-missing-config.h.patch"
-#)
 
 src_prepare() {
 	default
