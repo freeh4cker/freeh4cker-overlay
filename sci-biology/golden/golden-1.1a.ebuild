@@ -5,8 +5,8 @@
 EAPI=6
 
 DESCRIPTION="Golden is a small databanks entries indexer/retriever"
-HOMEPAGE="https://github.com/C3BI-pasteur-fr/golden"
-SRC_URI="https://github.com/C3BI-pasteur-fr/${PN}/archive/${PV}.tar.gz"
+HOMEPAGE="ftp://ftp.pasteur.fr/pub/gensoft/projects/golden/README"
+SRC_URI="ftp://ftp.pasteur.fr/pub/gensoft/projects/golden/${PN}-${PV}.tar.gz"
 
 LICENSE="GPL-2"
 SLOT="0"

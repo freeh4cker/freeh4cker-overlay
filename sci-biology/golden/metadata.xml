@@ -21,9 +21,9 @@ Currently supported formats: Genbank, Embl, Pir codata.
   </longdescription>
   <upstream>
     <maintainer status="active">
-	     <email>vlegrand@pasteur.fr</email>	
-		   <name>Véronique Legrand</name>
+	     <email>njoly@pasteur.fr</email>	
+		   <name>Nicolas Joly</name>
 		</maintainer>
-		<bugs-to>velegrand@pasteur.fr</bugs-to>
+		<bugs-to>njoly@pasteur.fr</bugs-to>
   </upstream>
 </pkgmetadata>
