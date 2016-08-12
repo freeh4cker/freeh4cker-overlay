@@ -1,0 +1,61 @@
+#!/sbin/openrc-run
+# Copyright 1999-2016 Gentoo Foundation
+# Distributed under the terms of the GNU General Public License v2
+# $Id$
+
+depend() {
+	need net
+}
+
+extra_commands="status"
+
+
+NEO4J_PID_DIR=`grep '^dbms.directories.run' /etc/neo4j/neo4j.conf | cut -d '=' -f 2`
+NEO4J_PID_DIR=${NEO4J_PID_DIR:-/var/run/neo4j}
+
+NEO4J_PID_FILE=${NEO4J_PID_DIR}/neo4j.pid
+
+
+check_pid_dir() {
+  if [ -d "${NEO4J_PID_DIR}" ]; then
+    mkdir -p ${NEO4J_PID_DIR}
+    chown neo4j.neo4j ${NEO4J_PID_DIR}
+  fi
+}
+
+do_ulimit() {
+  if [ -n "${NEO4J_ULIMIT_NOFILE}" ]; then
+     ulimit -n ${NEO4J_ULIMIT_NOFILE}
+  fi
+}
+
+start() {
+	ebegin "Starting neo4j"
+	check_pid_dir
+	do_ulimit
+	
+	start-stop-daemon --start \
+		--pidfile ${NEO4J_PID_FILE} \
+		--user neo4j:neo4j \
+		--exec neo4j -- start 
+	eend $?
+}
+
+stop() {
+	ebegin "Stopping neo4j"
+	start-stop-daemon --stop \
+		--pidfile ${NEO4J_PID_FILE} \
+		--exec neo4j -- stop 
+	eend $?
+}
+
+restart() {
+        svc_stop
+        sleep 3
+        svc_start
+}
+
+
+status() {
+	neo4j status
+	}

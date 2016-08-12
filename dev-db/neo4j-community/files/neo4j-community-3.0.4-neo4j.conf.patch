@@ -1,0 +1,18 @@
+--- conf/neo4j.conf.orig	2016-08-11 14:49:56.134072672 +0200
++++ conf/neo4j.conf	2016-08-11 14:49:22.632617546 +0200
+@@ -125,3 +125,15 @@
+ # neo4j-server-examples under /examples/unmanaged, resulting in a final URL of
+ # http://localhost:7474/examples/unmanaged/helloworld/{nodeId}
+ #dbms.unmanaged_extension_classes=org.neo4j.examples.server.unmanaged=/examples/unmanaged
++
++
++
++# Directory settings
++
++dbms.directories.logs=/var/log/neo4j
++dbms.directories.run=/var/run/neo4j
++dbms.directories.lib=/opt/neo4j-community/lib
++dbms.directories.certificates=/opt/neo4j-community/certificates
++dbms.directories.data=/var/lib/neo4j/data
++dbms.directories.plugins=plugins
++dbms.directories.certificates=certificates

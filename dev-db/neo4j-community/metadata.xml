@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+  <maintainer type="person">
+    <email>freeh4cker@gmail.com</email>
+    <name>Bertrand Néron</name>
+  </maintainer>
+  <longdescription lang="en">Neo4j is a highly scalable, native graph database.</longdescription>
+</pkgmetadata>
