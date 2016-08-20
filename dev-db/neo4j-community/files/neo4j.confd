@@ -1,5 +1,0 @@
-#options for neo4j
-
-NEO4J_USER="neo4j"
-NEO4J_GROUP="neo4j"
-NEO4J_ULIMIT_NOFILE="40000"
