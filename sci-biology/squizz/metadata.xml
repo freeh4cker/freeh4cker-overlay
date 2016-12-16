@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
 <pkgmetadata>
-  <herd>sci-biology</herd>
-  <maintainer>
+  <maintainer type="person">
     <email>freeh4cker@gmail.com</email>
     <name>Bertrand Néron</name>
   </maintainer>
@@ -22,6 +21,6 @@ Most common sequence and alignment formats are supported :
 	     <email>njoly@pasteur.fr</email>	
 		   <name>Nicolas Joly</name>
 		</maintainer>
-		<bugs-to>njoly@pasteur.fr</bugs-to>
+		<bugs-to>mailto:njoly@pasteur.fr</bugs-to>
   </upstream>
 </pkgmetadata>
