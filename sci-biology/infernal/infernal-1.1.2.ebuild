@@ -20,7 +20,19 @@ src_configure() {
 }
 
 src_install() {
-	for cm_bin in src/cm* ; do
-		echo ${cm_bin}
+	pushd src > /dev/null
+	for cm_bin in cmalign cmbuild cmcalibrate cmconvert cmemit cmfetch cmpress cmsearch cmscan cmstat ; do
+		dobin ${cm_bin}
 	done
+	popd > /dev/null
+
+	pushd documentation/manpages > /dev/null
+	for man_page in *.man ; do
+		newman ${man_page} "$(basename $man_page .man).1"
+	done;
+	popd > /dev/null
+
+	insinto /usr/share/${PN}
+	doins -r tutorial matrices
+	dodoc Userguide.pdf README RELEASE-NOTES
 }
