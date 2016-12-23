@@ -18,3 +18,9 @@ RDEPEND="${DEPEND}"
 src_configure() {
 	econf --prefix="${D}/usr" $(use_enable mpi)
 }
+
+src_install() {
+	for cm_bin in src/cm* ; do
+		echo ${cm_bin}
+	done
+}
