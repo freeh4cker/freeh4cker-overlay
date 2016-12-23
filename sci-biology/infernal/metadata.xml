@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
 <pkgmetadata>
-	<herd>sci-biology</herd>
   <maintainer type="project">
     <email>sci-biology@gentoo.org</email>
     <name>Gentoo Biology Project</name>
@@ -22,4 +21,7 @@ it is more capable of identifying RNA homologs
 that conserve their secondary structure more 
 than their primary sequence.
   </longdescription>
+	<upstream>
+	  <bugs-to>mailto:sean@eddylab.org</bugs-to>
+  </upstream>
 </pkgmetadata>
