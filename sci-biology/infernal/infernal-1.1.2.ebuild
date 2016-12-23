@@ -18,4 +18,3 @@ RDEPEND="${DEPEND}"
 src_configure() {
 	econf --prefix="${D}/usr" $(use_enable mpi)
 }
-
