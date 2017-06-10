@@ -10,6 +10,10 @@ DESCRIPTION="A cross-platform multimedia framework based on Qt and FFmpeg."
 HOMEPAGE="http://qtav.org"
 SRC_URI="https://github.com/wang-bin/${PN}/archive/v${PV}.tar.gz -> ${P}.tar.gz"
 
+MY_PN="QtAV"
+MY_P="${MY_PN}-${PV}"
+S="${WORKDIR}/${MY_P}"
+
 LICENSE="GPL-2"
 SLOT="0"
 KEYWORDS="~amd64 ~x86"
