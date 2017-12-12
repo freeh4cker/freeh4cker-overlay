@@ -41,6 +41,6 @@ src_install() {
 	MAKEOPTS+=" -j1"
 	default
 	prune_libtool_files
-	dodoc ChangeLog CONTRIBUTORS.md CONTRIBUTING.md
+	dodoc README.md CONTRIBUTORS.md CONTRIBUTING.md
 	use examples && dodoc -r examples
 }
