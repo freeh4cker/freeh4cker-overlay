@@ -2,7 +2,7 @@
 <!DOCTYPE repositories SYSTEM "/dtd/repositories.dtd">
 <repositories xmlns="" version="1.0">
 	<repo quality="experimental" status="unofficial">
-		<name>freeh4cker-overlay</name>
+		<name>freeh4cker</name>
 		<description>freeh4cker Overlay.</description>
 		<homepage>https://github.com/freeh4cker-overlay</homepage>
 		<owner type="person">
