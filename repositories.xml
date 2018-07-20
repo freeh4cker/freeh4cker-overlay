@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE repositories SYSTEM "/dtd/repositories.dtd">
+<repositories xmlns="" version="1.0">
+	<repo quality="experimental" status="unofficial">
+		<name>freeh4cker-overlay</name>
+		<description>freeh4cker Overlay.</description>
+		<homepage>https://github.com/freeh4cker-overlay</homepage>
+		<owner type="person">
+			<email>freeh4cker@gmail.com</email>
+			<name>Bertrand Néron</name> 
+		</owner>
+		<source type="git">git@github.com:freeh4cker/freeh4cker-overlay.git</source>
+	</repo>
+</repositories>
