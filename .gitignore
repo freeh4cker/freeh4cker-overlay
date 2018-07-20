@@ -1,0 +1,21 @@
+#######################
+# from GENTOO overlay #
+#######################
+/.ebuild.x
+/distfiles/
+/eclass/*.5
+/local/
+/packages/
+/profiles/use.local.desc
+
+########################
+# from SCIENCE overlay #
+########################
+.DS_Store
+app-misc/dummy
+eclass/*.5
+
+###########################
+# specific for MY_OVERLAY #
+###########################
+.idea/
