@@ -27,7 +27,7 @@ RDEPEND="
 DEPEND="${RDEPEND}
 	sys-devel/flex"
 
-DOCS=( CONTRIB DEPRECATED NEWS README Doc/. )
+DOCS=( CONTRIB.rst DEPRECATED.rst NEWS.rst README.rst Doc/. )
 
 python_test() {
 	distutils_install_for_testing
