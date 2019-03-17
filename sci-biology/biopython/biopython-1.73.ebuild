@@ -1,4 +1,4 @@
-# Copyright 1999-2018 Gentoo Foundation
+# Copyright 1999-2019 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=7
@@ -33,10 +33,7 @@ python_test() {
 	distutils_install_for_testing
 	cp -r "${S}"/{Doc,Tests} "${TEST_DIR}"/lib/ || die
 	cd "${TEST_DIR}"/lib/Tests || die
-	rm test_BioSQL_{psycopg2.py,psycopg2_online.py,\
-	MySQLdb.py,MySQLdb_online.py,\
-	mysql_connector.py,mysql_connector_online.py,\
-	sqlite3.py,sqlite3_online.py} || die
+	rm test_BioSQL_{psycopg2.py,MySQLdb.py,mysql_connector.py} || die
 	"${EPYTHON}" run_tests.py --offline --verbose || die
 }
 
@@ -53,7 +50,7 @@ python_install_all() {
 pkg_postinst() {
 	elog "For database support you need to install:"
 	optfeature "MySQL" dev-python/mysql-python
-	optfeature "PostGreSQL" dev-python/psycopg dev-python/pygresql
+	optfeature "PostGreSQL" dev-python/psycopg
 
 	elog "Some applications need extra packages:"
 	optfeature "EMBOSS (The European Molecular Biology Open Software Suite)" sci-biology/emboss
