@@ -1,4 +1,4 @@
-# Copyright 1999-2018 Gentoo Foundation
+# Copyright 1999-2019 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=6
@@ -37,6 +37,6 @@ src_install() {
 	MAKEOPTS+=" -j1"
 	default
 	prune_libtool_files
-	dodoc README.md CONTRIBUTORS.md CONTRIBUTING.md COPYRIGHT.md 
+	dodoc README.md CONTRIBUTORS.md CONTRIBUTING.md COPYRIGHT.md
 	use examples && dodoc -r examples
 }
