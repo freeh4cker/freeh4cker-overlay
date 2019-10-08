@@ -18,7 +18,8 @@ SLOT="0"
 KEYWORDS="~amd64 ~x86 ~amd64-linux ~x86-linux"
 IUSE="+suid"
 
-DEPEND=">=sys-fs/squashfs-tools-4.3"
+DEPEND=">=sys-fs/squashfs-tools-4.3 
+        >=sys-fs/cryptsetup-1.7.5"
 RDEPEND="${DEPEND}"
 BDEPEND=""
 
